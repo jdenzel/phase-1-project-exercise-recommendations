@@ -19,15 +19,25 @@ fetch("http://localhost:3000/core").then(res => res.json()).then(muscleGroup => 
     });
 })
 
-    //     pushExercise.forEach(excercise => {
-    //         createInfoBox(eercise)
-    //     })
-    //     //display name, gif, description
-    //     //create an h2 element for name
-    //     //create an <img> element for gif
-    //     //create a p element for description 
-    //     // append elements to list item
-    //     //append list item to container
+const push = document.getElementById('pushExercises')
+const pull = document.getElementById('pullExercises')
+const legs = document.getElementById('legsExercises')
+const core = document.getElementById('coreExercises')
+const errorElement = document.getElementById('error')
+
+const form = document.getElementById('chooseWorkout')
+form.addEventListener('submit', (e) => {
+    let message = []
+    if(select.value ==''){
+        message.push("Choose a workout")
+        console.log(message)
+    }
+    if(message.length > 0){
+        e.preventDefault()
+        errorElement.innerText = message.join(', ')
+    }
+    
+})
 
 function createInfoBox(excercise){
     let infoBox = document.createElement("div")
