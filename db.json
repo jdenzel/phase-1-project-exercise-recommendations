@@ -1,0 +1,188 @@
+{
+    "push": [
+        {
+            "chest": [
+                {
+                    "id": 1,
+                    "name": "dumbbell press",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Press.gif",
+                    "description": "Equipment needed: bench, dumbbells"
+                },
+                {
+                    "id": 1,
+                    "name": "incline dumbbell press",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Incline-Dumbbell-Press.gif",
+                    "description": "Equipment needed: bench, dumbbells"
+                },
+                {
+                    "id": 1,
+                    "name": "decline dumbbell press",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Decline-Dumbbell-Press.gif",
+                    "description": "Equipment needed: bench, dumbbells"
+                }
+            ],
+            "shoulders": [
+                {
+                    "id": 1,
+                    "name": "dumbbell shoulder press",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Shoulder-Press.gif",
+                    "description": "Equipment needed: bench, dumbbells"
+                },
+                {
+                    "id": 1,
+                    "name": "dumbbell lateral raises",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Lateral-Raise.gif",
+                    "description": "Equipment needed: dumbbells"
+                },
+                {
+                    "id": 1,
+                    "name": "cable rear delt fly",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/cable-rear-delt-fly.gif",
+                    "description": "Equipment needed: cable machine"
+                }
+
+            ],
+            "triceps": [
+                {
+                    "id": 1,
+                    "name": "cable push down",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pushdown.gif",
+                    "description": "Equipment needed: cable machine, handle attachment"
+                },
+                {
+                    "id": 1,
+                    "name": "machine dips",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Cable-Rope-Overhead-Triceps-Extension.gif",
+                    "description": "Equipment needed: machine assisted dip"
+                },
+                {
+                    "id": 1,
+                    "name": "overhead tricep extension",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pushdown.gif",
+                    "description": "Equipment needed: cable machine, handle attachment"
+                }
+            ]
+        }
+    
+    ],
+    "pull": [
+        {
+            "back": [
+                {
+                    "id": 1,
+                    "name": "pull up",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pull-up.gif",
+                    "description": "Equipment needed: machine assisted pull up"
+                },
+                {
+                    "id": 1,
+                    "name": "bent over rows",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Bent-Over-Row.gif",
+                    "description": "Equipment needed: barbell, weights"
+                },
+                {
+                    "id": 1,
+                    "name": "romanian deadlift",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Romanian-Deadlift.gif",
+                    "description": "Equipment needed: barbell, weights"
+                }
+            ],
+            "bicep": [
+                {
+                    "id": 1,
+                    "name": "concentration curls",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Concentration-Curl.gif",
+                    "description": "Equipment needed: bench, dumbbells"
+                },
+                {
+                    "id": 1,
+                    "name": "hammer curls",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Hammer-Curl.gif",
+                    "description": "Equipment needed: bench, dumbbells"
+                },
+                {
+                    "id": 1,
+                    "name": "concentration curls",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Hammer-Curl.gif",
+                    "description": "Equipment needed: machine, barbell, weights"
+                }
+            ]
+        }
+    ],
+    "legs": [
+        {
+            "quads": [
+                {
+                    "id": 1,
+                    "name": "leg extension",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/LEG-EXTENSION.gif",
+                    "description": "Equipment needed: machine"  
+                },
+                {
+                    "id": 1,
+                    "name": "bulgarian split squats",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Dumbbell-Bulgarian-Split-Squat.gif",
+                    "description": "Equipment needed: bench, dumbbells"  
+                },
+                {
+                    "id": 1,
+                    "name": "hack squat",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Sled-Hack-Squat.gif",
+                    "description": "Equipment needed: machine, weights"  
+                }
+            ],
+            "hamgstring": [
+                {
+                    "id": 1,
+                    "name": "leg curl",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Leg-Curl.gif",
+                    "description": "Equipment needed: machine"
+                },
+                {
+                    "id": 1,
+                    "name": "nordic hamstring curl",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Nordic-Hamstring-Curl.gif",
+                    "description": "Equipment needed: machine"
+                }
+            ],
+            "gluts": [
+                {
+                    "id": 1,
+                    "name": "hip thrusts",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Glute-Kickback-Machine.gif",
+                    "description": "Equipment needed: machine, barbell, weights"
+                },
+                {
+                    "id": 1, 
+                    "name": "kickback machine",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Glute-Kickback-Machine.gif",
+                    "description": "Equipment needed: machine"
+                }
+            ]
+        }
+    ],
+    "core": [
+        {
+            "abs": [
+                {
+                    "id": 1, 
+                    "name": "bicycle crunches",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Bicycle-Crunch.gif",
+                    "description": "Equipment needed: none"
+                },
+                {
+                    "id": 1, 
+                    "name": "mountain climbers",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Mountain-climber.gif",
+                    "description": "Equipment needed: none"
+                },
+                {
+                    "id": 1, 
+                    "name": "captains chair leg raises",
+                    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Captains-Chair-Leg-Raise.gif",
+                    "description": "Equipment needed: machine"
+                }
+            ]
+        }
+    ]
+}
