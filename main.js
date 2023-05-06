@@ -1,12 +1,23 @@
 console.log("main js works");
 fetch("http://localhost:3000/push").then(res => res.json()).then(muscleGroup => {
-    // for(let muscle of muscleGroup){
-
-    // }
     muscleGroup.forEach(pushExercises => {
         createInfoBox(pushExercises)
     });
-    console.log(pushExercises)
+})
+fetch("http://localhost:3000/pull").then(res => res.json()).then(muscleGroup => {
+    muscleGroup.forEach(pullExercises => {
+        createInfoBox(pullExercises)
+    });
+})
+fetch("http://localhost:3000/legs").then(res => res.json()).then(muscleGroup => {
+    muscleGroup.forEach(legsExercises => {
+        createInfoBox(legsExercises)
+    });
+})
+fetch("http://localhost:3000/core").then(res => res.json()).then(muscleGroup => {
+    muscleGroup.forEach(coreExercises => {
+        createInfoBox(coreExercises)
+    });
 })
 
     //     pushExercise.forEach(excercise => {
