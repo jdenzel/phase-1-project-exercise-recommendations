@@ -1,4 +1,3 @@
-console.log("main js works");
 fetch("http://localhost:3000/push").then(res => res.json()).then(muscleGroup => {
     muscleGroup.forEach(pushExercises => {
         createInfoBox(pushExercises)
@@ -41,21 +40,13 @@ function createInfoBox(excercise){
     gif.src = excercise.gif
     gif.classList.add("excercise-gif")
 
+    let musclesWorked = document.createElement("p")
+    musclesWorked.textContent = excercise.musclesWorked
+
     let description = document.createElement("p")
     description.textContent = excercise.description
 
-    infoBox.append(name, gif, description)
+    infoBox.append(name, gif, musclesWorked, description)
     document.getElementById("exercisesList").append(infoBox)
 }
-
-
-
-
-
-
-
-
-// fetch("http://localhost:3000/pull").then(res => res.json()).then(json => console.log(json))
-// fetch("http://localhost:3000/legs").then(res => res.json()).then(json => console.log(json))
-// fetch("http://localhost:3000/core").then(res => res.json()).then(json => console.log(json))
 
