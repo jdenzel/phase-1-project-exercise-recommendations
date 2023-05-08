@@ -1,58 +1,19 @@
-// fetch("http://localhost:3000/push").then(res => res.json()).then(muscleGroup => {
-//     muscleGroup.forEach(pushExercises => {
-//         createInfoBox(pushExercises)
-//     });
-// })
-// fetch("http://localhost:3000/pull").then(res => res.json()).then(muscleGroup => {
-//     muscleGroup.forEach(pullExercises => {
-//         createInfoBox(pullExercises)
-//     });
-// })
-// fetch("http://localhost:3000/legs").then(res => res.json()).then(muscleGroup => {
-//     muscleGroup.forEach(legsExercises => {
-//         createInfoBox(legsExercises)
-//     });
-// })
-// fetch("http://localhost:3000/core").then(res => res.json()).then(muscleGroup => {
-//     muscleGroup.forEach(coreExercises => {
-//         createInfoBox(coreExercises)
-//     });
-// })
-
-// const push = document.getElementById('pushExercises')
-// const pull = document.getElementById('pullExercises')
-// const legs = document.getElementById('legsExercises')
-// const core = document.getElementById('coreExercises')
-// const errorElement = document.getElementById('error')
-
-// const form = document.getElementById('chooseWorkout')
-// form.addEventListener('submit', (e) => {
-//     let message = []
-//     if(select.value ==''){
-//         message.push("Choose a workout")
-//         console.log(message)
-//     }
-//     if(message.length > 0){
-//         e.preventDefault()
-//         errorElement.innerText = message.join(', ')
-//     }
-    
-// })
 const allExercises = []
 fetch("http://localhost:3000/exercises").then(res => res.json()).then(exercises => {
     exercises.forEach(exercise => {
         allExercises.push(exercise)
-        createInfoBox(exercise)
         
     });
 });
 const select = document.getElementById('workout')
+const exerciseList = document.getElementById("exercisesList")
 select.addEventListener('change', (e) =>{
     console.log(e)
+    exerciseList.innerHTML =''
     const selected = e.target.value
     const allExercisesCopy = [...allExercises];
     filteredExercises = allExercisesCopy.filter(exercise => exercise.musclesWorked === selected)
-
+    filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
 
 
