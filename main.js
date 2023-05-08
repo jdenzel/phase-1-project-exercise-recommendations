@@ -2,6 +2,7 @@ const allExercises = []
 fetch("http://localhost:3000/exercises").then(res => res.json()).then(exercises => {
     exercises.forEach(exercise => {
         allExercises.push(exercise)
+        createInfoBox(exercise)
         
     });
 });
@@ -12,10 +13,20 @@ select.addEventListener('change', (e) =>{
     exerciseList.innerHTML =''
     const selected = e.target.value
     const allExercisesCopy = [...allExercises];
-    filteredExercises = allExercisesCopy.filter(exercise => exercise.musclesWorked === selected)
+    filteredExercises = allExercisesCopy.filter(exercise => {
+        if(selected === 'All'){
+            return exercise
+        }
+        else if(exercise.musclesWorked === selected){
+            return exercise
+        }
+        })
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
 
+.addEventListener('click', (e) =>{
+    
+})
 
 console.log(allExercises)
 function createInfoBox(excercise){
