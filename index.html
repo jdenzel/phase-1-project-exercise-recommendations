@@ -11,25 +11,20 @@
 <body>
 
     <h1>Exercise Recommendations</h1>
-    <!-- <form id="chooseWorkout">
-    <input type="radio" id="pushExercises" name="workout" value="push">
-    <label for="radio">Push - chest, shoulders, triceps</label><br>
-    <input type="radio" id="pullExercises" name="workout" value="pull">
-    <label for="radio">Pull - back, biceps</label><br>
-    <input type="radio" id="legExercises" name="workout" value="legs">
-    <label for="radio">Legs - quads, hamstrings, calves, glutes</label><br>
-    <input type="radio" id="coreExercises" name="workout" value="abs">
-    <label for="radio">Core - abs</label><br>
-    <input type ="submit" value="submit"><br>
-    </form> -->
-
     <form id="chooseWorkout">
-        <label for="workout">Choose a workout:</label><br>
+        <label for="workout">Choose a muscle group:</label><br>
         <select name="workout" id="workout" required>
-          <option value="pushExercises">Push</option>
-          <option value="pullExercises]">Pull</option>
-          <option value="legExercises">Legs</option>
-          <option value="coreExercises">Core</option>
+            <option value="chest">Chest</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="triceps">Triceps</option>
+            <option value="back">Back</option>
+            <option value="biceps">Biceps</option>
+            <option value="quads">Quads</option>
+            <option value="hamstrings">Hamstrings</option>
+            <option value="calves">Calves</option>
+            <option value="glutes">Glutes</option>
+            <option value="abs">Abs</option>
+            <option value="All">All Exercises</option>
         </select>
         <br><br>
         <input type="submit" value="submit">
