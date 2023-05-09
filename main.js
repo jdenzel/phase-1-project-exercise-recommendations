@@ -7,9 +7,8 @@ fetch("http://localhost:3000/exercises").then(res => res.json()).then(exercises 
     });
 });
 const select = document.getElementById('workout')
-const exerciseList = document.getElementById("exercisesList")
+const exerciseList = document.getElementById("exercisesStack")
 select.addEventListener('change', (e) =>{
-    console.log(e)
     exerciseList.innerHTML =''
     const selected = e.target.value
     const allExercisesCopy = [...allExercises];
@@ -23,12 +22,12 @@ select.addEventListener('change', (e) =>{
         })
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
+
 const box = document.getElementsByClassName('box')
     box.addEventListener('mouseover', function() {
-    box.style.borderColor = 'red';
+    box.style.borderColor = 'white';
+    console.log("you are hovering")
 })
-
-console.log(allExercises)
 function createInfoBox(excercise){
     let infoBox = document.createElement("div")
     infoBox.classList.add("box")
@@ -47,7 +46,7 @@ function createInfoBox(excercise){
     description.textContent = excercise.description
     
     infoBox.append(name, gif, musclesWorked, description)
-    document.getElementById("exercisesList").append(infoBox)
+    document.getElementById("exercisesStack").append(infoBox)
 
 }
 
