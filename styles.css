@@ -19,12 +19,15 @@ body {
     width: fit-content;
     border-style: solid;
     border-color: rgb(149, 53, 83);
-    border-width: 3px;
-    border-radius: 3px;
+    border-width: 5px;
+    border-radius: 5px;
     text-align: center;
 }
 #exercisesStack{
-    width: auto;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: center;
+    margin-right: center;
+    width: 100%;
     justify-content: center;
 }
