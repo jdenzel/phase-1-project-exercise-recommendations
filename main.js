@@ -23,11 +23,13 @@ select.addEventListener('change', (e) =>{
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
 
-const box = document.getElementsByClassName('box')
-    box.addEventListener('mouseover', function() {
-    box.style.borderColor = 'white';
+    let box = document.querySelectorAll('.box');
+    console.log(box)
+    console.log(exerciseList)
+    exerciseList.addEventListener('mouseover',  function() {
+    box.style.borderColor = 'red';
     console.log("you are hovering")
-})
+});
 
 function createInfoBox(excercise){
     let infoBox = document.createElement("div")

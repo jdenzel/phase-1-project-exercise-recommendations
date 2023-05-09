@@ -1,28 +1,53 @@
 body {
     font-family: Arial;
-    color:#05486B;
-    background-color: #5CDB95;
-
+    color: black;
+    background-color:white;
 }
 .header {
   padding: 60px;
   text-align: center;
-  background: rgb(149, 53, 83);
+  background: #404040;
   color: white;
   font-size: 30px;
   border-radius: 25px;
 }
+.header > p {
+    color: #B3B3B3  
+}
 .box {
-    background-color: #8EE4AF;
+    background-color: #404040;
     margin: 10px;
     height:fit-content;
     width: fit-content;
     border-style: solid;
-    border-color: #05386B;
+    border-color: black;
     border-width: 5px;
     border-radius: 5px;
     text-align: center;
 }
+.box > h2 {
+    color: white;
+    text-transform: capitalize;
+}
+.box > p {
+    text-align: center;
+    color: #B3B3B3;
+    font-size:18px;
+}
+select {
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    color:white;
+    background-color: #404040;
+    border-color:black;
+    border-style: solid;
+    border-width: 2px
+}
+.chooseWorkout {
+    text-align: center;
+}
+
+
 #exercisesStack{
     display: flex;
     flex-wrap: wrap;
