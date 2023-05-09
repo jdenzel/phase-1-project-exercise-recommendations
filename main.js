@@ -23,19 +23,21 @@ select.addEventListener('change', (e) =>{
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
 
-    let box = document.querySelectorAll('.box');
-    console.log(box)
-    console.log(exerciseList)
-    exerciseList.addEventListener('mouseover',  function() {
-    box.style.borderColor = 'red';
-    console.log("you are hovering")
+    const dropdown = document.getElementById('workout');
+    dropdown.addEventListener('mouseover', function() {
+    dropdown.style.borderColor = '#8b3321';
+    dropdown.style.color = '#eea993';
+});
+    dropdown.addEventListener('mouseout', function() {
+    dropdown.style.borderColor = 'black';
+    dropdown.style.color = 'white';
 });
 
 function createInfoBox(excercise){
     let infoBox = document.createElement("div")
     infoBox.classList.add("box")
     let name = document.createElement("h2")
-    name.textContent = excercise.name
+    name.textContent = exercise.name.charAt(0).tuUpperCase() + exercise.name.slice(1)
     let gif = document.createElement("img")
     gif.src = excercise.gif
     gif.classList.add("excercise-gif")
