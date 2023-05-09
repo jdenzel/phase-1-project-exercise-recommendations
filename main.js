@@ -24,8 +24,8 @@ select.addEventListener('change', (e) =>{
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
 const box = document.getElementsByClassName('box')
-.addEventListener('click', (e) =>{
-    
+    box.addEventListener('mouseover', function() {
+    box.style.borderColor = 'red';
 })
 
 console.log(allExercises)
@@ -45,7 +45,6 @@ function createInfoBox(excercise){
 
     let description = document.createElement("p")
     description.textContent = excercise.description
-
     
     infoBox.append(name, gif, musclesWorked, description)
     document.getElementById("exercisesList").append(infoBox)

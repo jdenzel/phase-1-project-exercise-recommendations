@@ -47,7 +47,7 @@
             "name": "cable push down",
             "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pushdown.gif",
             "musclesWorked": "triceps",
-            "description": "Equipment needed: cable machine, handle attachment"
+            "description": "Equipment needed: cable machine"
         },
         {
             "id": 8,
@@ -61,7 +61,7 @@
             "name": "overhead tricep extension",
             "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pushdown.gif",
             "musclesWorked": "triceps",
-            "description": "Equipment needed: cable machine, handle attachment"
+            "description": "Equipment needed: cable machine"
         },
         {
             "id": 10,
