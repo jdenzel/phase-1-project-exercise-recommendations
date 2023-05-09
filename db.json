@@ -3,19 +3,19 @@
         {
             "name": "dumbbell press",
             "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Press.gif",
-            "musclesWorked": "chest",
+            "musclesWorked": "Muscles worked: Chest",
             "description": "Equipment needed: bench, dumbbells"
         },
         {
             "name": "incline dumbbell press",
             "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Incline-Dumbbell-Press.gif",
-            "musclesWorked": "chest",
+            "musclesWorked": "Muscles worked: Chest",
             "description": "Equipment needed: bench, dumbbells"
         },
         {
             "name": "decline dumbbell press",
             "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Decline-Dumbbell-Press.gif",
-            "musclesWorked": "chest",
+            "musclesWorked": "Muscles worked: Chest",
             "description": "Equipment needed: bench, dumbbellschest"
         },
         {

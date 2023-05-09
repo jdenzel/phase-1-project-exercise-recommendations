@@ -37,10 +37,10 @@ function createInfoBox(exercise){
     let infoBox = document.createElement("div")
     infoBox.classList.add("box")
     let name = document.createElement("h2")
-    name.textContent = exercise.name.charAt(0).tuUpperCase() + exercise.name.slice(1)
+    name.textContent = exercise.name
     let gif = document.createElement("img")
     gif.src = exercise.gif
-    gif.classList.add("excercise-gif")
+    gif.classList.add("exercise-gif")
     let musclesWorked = document.createElement("p")
     musclesWorked.textContent = exercise.musclesWorked
     let description = document.createElement("p")
