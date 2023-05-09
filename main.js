@@ -23,7 +23,7 @@ select.addEventListener('change', (e) =>{
         })
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
-
+const box = document.getElementsByClassName('box')
 .addEventListener('click', (e) =>{
     
 })
@@ -46,7 +46,9 @@ function createInfoBox(excercise){
     let description = document.createElement("p")
     description.textContent = excercise.description
 
+    
     infoBox.append(name, gif, musclesWorked, description)
     document.getElementById("exercisesList").append(infoBox)
+
 }
 
