@@ -15,6 +15,9 @@ body {
 .header > p {
     color: #B3B3B3  
 }
+.label {
+    margin: 10px 10px;
+}
 label {
     font-size: 30px;
     text-align: center;
@@ -32,6 +35,7 @@ label {
 .box > h2 {
     color: white;
     text-transform: capitalize;
+
 }
 .box > p {
     text-align: center;
@@ -40,6 +44,18 @@ label {
     position: relative;
 
 }
+
+.box > p::first-letter {
+    text-transform: capitalize;
+}
+
+.box p:first-of-type {
+    color: #eea993;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
 select {
     font-size: 1.5rem;
     padding: 10px 10px;
