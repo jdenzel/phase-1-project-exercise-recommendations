@@ -4,6 +4,7 @@ body {
     background-color:white;
     text-align: center;
 }
+
 .header {
   padding: 60px;
   text-align: center;
@@ -12,16 +13,20 @@ body {
   font-size: 30px;
   border-radius: 25px;
 }
+
 .header > p {
     color: #B3B3B3  
 }
+
 .label {
     margin: 10px 10px;
 }
+
 label {
     font-size: 30px;
     text-align: center;
 }
+
 .box {
     background-color: #404040;
     margin: 10px;
@@ -32,11 +37,13 @@ label {
     text-align: center;
     width: 370px;
 }
+
 .box > h2 {
     color: white;
     text-transform: capitalize;
 
 }
+
 .box > p {
     text-align: center;
     color: #B3B3B3;
@@ -55,7 +62,6 @@ label {
     font-weight: bold;
 }
 
-
 select {
     font-size: 1.5rem;
     padding: 10px 10px;
@@ -66,6 +72,7 @@ select {
     border-width: 2px;
     border-radius: 2px;
 }
+
 .chooseWorkout {
     text-align: center;
 }
@@ -77,6 +84,7 @@ select {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
 #exercisesStack{
     display: flex;
     flex-wrap: wrap;

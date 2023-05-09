@@ -1,3 +1,4 @@
+//Fetch
 const allExercises = []
 fetch("http://localhost:3000/exercises").then(res => res.json()).then(exercises => {
     exercises.forEach(exercise => {
@@ -6,6 +7,7 @@ fetch("http://localhost:3000/exercises").then(res => res.json()).then(exercises 
         
     });
 });
+//Event listener to change what infoBox is being shown
 const select = document.getElementById('workout')
 const exerciseList = document.getElementById("exercisesStack")
 select.addEventListener('change', (e) =>{
@@ -22,17 +24,18 @@ select.addEventListener('change', (e) =>{
         })
     filteredExercises.forEach(exercise => createInfoBox(exercise))
 })
-
+    //Changes color of dropdown box when hovered
     const dropdown = document.getElementById('workout');
     dropdown.addEventListener('mouseover', function() {
     dropdown.style.borderColor = '#8b3321';
     dropdown.style.color = '#eea993';
-});
+    });
+
     dropdown.addEventListener('mouseout', function() {
     dropdown.style.borderColor = 'black';
     dropdown.style.color = 'white';
-});
-
+    });
+    //creates an information box for the exercise
 function createInfoBox(exercise){
     let infoBox = document.createElement("div")
     infoBox.classList.add("box")
