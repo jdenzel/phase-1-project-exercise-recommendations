@@ -27,7 +27,8 @@ h2 {
 }
 
 label {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -79,6 +80,7 @@ select {
     border-style: solid;
     border-width: 2px;
     border-radius: 2px;
+    text-align: center;
 }
 
 .chooseWorkout {
