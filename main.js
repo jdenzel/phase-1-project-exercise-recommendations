@@ -33,18 +33,18 @@ select.addEventListener('change', (e) =>{
     dropdown.style.color = 'white';
 });
 
-function createInfoBox(excercise){
+function createInfoBox(exercise){
     let infoBox = document.createElement("div")
     infoBox.classList.add("box")
     let name = document.createElement("h2")
     name.textContent = exercise.name.charAt(0).tuUpperCase() + exercise.name.slice(1)
     let gif = document.createElement("img")
-    gif.src = excercise.gif
+    gif.src = exercise.gif
     gif.classList.add("excercise-gif")
     let musclesWorked = document.createElement("p")
-    musclesWorked.textContent = excercise.musclesWorked
+    musclesWorked.textContent = exercise.musclesWorked
     let description = document.createElement("p")
-    description.textContent = excercise.description
+    description.textContent = exercise.description
     infoBox.append(name, gif, musclesWorked, description)
     document.getElementById("exercisesStack").append(infoBox)
 
