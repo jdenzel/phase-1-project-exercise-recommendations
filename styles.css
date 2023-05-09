@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
-    color: 	rgb(250, 249, 246);
-    background-color: rgb(35,39,42);
+    color:#05486B;
+    background-color: #5CDB95;
 
 }
 .header {
@@ -13,12 +13,12 @@ body {
   border-radius: 25px;
 }
 .box {
-    background-color: rgb(35,39,42);
+    background-color: #8EE4AF;
     margin: 10px;
     height:fit-content;
     width: fit-content;
     border-style: solid;
-    border-color: rgb(149, 53, 83);
+    border-color: #05386B;
     border-width: 5px;
     border-radius: 5px;
     text-align: center;
